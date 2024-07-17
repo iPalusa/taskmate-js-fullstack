@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Taskmate - Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        <div class="form">
+            <input type="hidden" id="todoId">
+            <input type="text" id="todoTitle" placeholder="Enter todo title">
+            <textarea id="todoDescription" placeholder="Enter todo description"></textarea>
+            <select id="todoStatus">
+                <option value="PENDING">PENDING</option>
+                <option value="IN PROGRESS">IN PROGRESS</option>
+                <option value="COMPLETED">COMPLETED</option>
+            </select>
+            <button onclick="createOrUpdateTodo()">Add/Update Todo</button>
+        </div>
+        <div class="todo-list">
+            <ul id="todos"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
